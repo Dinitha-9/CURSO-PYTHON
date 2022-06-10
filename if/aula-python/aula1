@@ -1,0 +1,52 @@
+from traceback import print_list
+
+
+'''def boas_vindas(nome, idade):
+     print (f"0lá {nome} você tem {str(idade)}") 
+    
+boas_vindas('Dinitha',36) '''
+
+
+def cadastro(pessoas):
+    nome = input("Digite seu nome: ")
+    cpf = input("Digite seu cpf: ")
+    idade = int(input("Digite sua idade: "))
+    pessoas.append((nome, cpf, idade))  
+    
+    
+def listar(pessoas):
+    for pessoa in pessoas:
+        nome, cpf , idade = pessoa
+        print(f'Nome {nome}  sua {idade} CPF é {cpf}')
+                        
+            
+def exibir_menu():
+    print('''\n Escolha uma opção:
+        1. Cadastrar pessoas:
+        2. Listar pessoas 
+        3. Sair''')
+        
+def main():
+    pessoas = []
+    flag = True
+    while flag:
+        exibir_menu()
+        try:
+            opcao = int(input("Digite a opção:"))
+            if opcao == 1:
+                cadastro(pessoas)
+            elif opcao == 2:
+                listar(pessoas)
+            elif  opcao == 3:
+                flag = False 
+            else:
+                print ('Opção invalida')
+        except ValueError:
+                 print('SOMENTE NUMEROS')
+
+main()                 
+        
+
+      
+            
+      
