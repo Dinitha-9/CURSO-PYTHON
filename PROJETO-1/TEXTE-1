@@ -1,0 +1,174 @@
+'''idade = input("informe sua idade: ")
+print (int(idade, type(idade)))'''
+
+
+#salario/gasto mensal
+
+'''salario_mensal = input('Digite seu salário mensal:  ')
+salario_mensal = float(salario_mensal)
+
+gasto_mensal =  input( 'Digite seu gasto mensal em média:  ')
+gasto_mensal = float(gasto_mensal)
+
+salario_total = salario_mensal * 12
+gasto_total = gasto_mensal * 12
+
+montante_economizado = salario_total - gasto_total
+print('você vai economizar ao ano: ', montante_economizado   )'''
+
+
+'''valor_passagem = 4.50
+
+valor_corrida = input("Qual volor corrida?")
+if float(valor_corrida ) <= valor_passagem * 5:
+        print("vou de UBER:")
+if float(valor_corrida ) > valor_passagem * 5:   
+        print("vou de ÔNIBUS:")'''
+    
+#simpllifivandi com else    
+'''from ast import While
+from http.client import CONFLICT
+
+
+valor_passagem = 4.50
+
+valor_corrida = input("Qual volor corrida?")
+if float(valor_corrida ) <= valor_passagem * 5:
+        print("vou de UBER:")
+else:  
+        if float(valor_corrida) <= valor_passagem * 6:
+                print('Aguarde...')
+                
+        print("vou de ÔNIBUS:")
+        
+      # usando elif
+valor_passagem = 4.50
+
+valor_corrida = input("Qual volor corrida?")
+if float(valor_corrida ) <= valor_passagem * 5:
+        print("vou de UBER:")
+elif  float(valor_corrida) <= valor_passagem * 6:
+                print('Aguarde...')
+else:      
+        print("vou de ÔNIBUS:")'''
+        
+        #While
+        
+'''contador = 0
+
+while contador < 10:
+        contador = contador + 1 
+        if contador == 1:
+                print (contador, "Itens limpo")
+        else:
+                print (contador, "ITENS LIMPOS")
+print ('Fim...') '''
+        
+        #While/looping
+        
+'''contador = 0
+while True:
+        if contador < 10:
+                contador =contador + 1
+                if contador == 1:
+                      print(contador,'Item limpo')
+                else:
+                        print (contador, 'itens limpo')
+        else:
+                break
+print('Fim...')'''
+
+
+        #While/looping/INPUT
+        
+'''texto = input('Digite sua senha: ')
+while texto != 'Dinitha':
+        texto = input('SENHA INVALIDA!: ')
+print('Acesso permitido')'''
+
+
+#While/looping/continue
+
+'''contador = 0
+
+while contador < 10:
+        contador = contador + 1 
+        if contador == 1:
+                continue
+        print (contador, "ITENS LIMPOS")
+print ('Fim...') '''
+        
+        #lista [] /tupla()
+        
+'''nomes_paises = ['Brasil',' Argentina','China','Canada','japão']
+print(nomes_paises)
+
+#len = tammanho Da LISTA
+print('Tamanho da lista: ',len(nomes_paises))
+
+#ultima posição 
+print(nomes_paises[-1])
+
+#ALTERAR VALOR LISTA 
+nomes_paises[-1] = 'Grecia'
+print(nomes_paises[-1])
+print(nomes_paises)
+
+#escolher quais indices visualizar
+print(nomes_paises[1:4])
+
+#omitir o indive final, vao ate o final da lista
+print(nomes_paises[1:])
+
+#toda lista
+print(nomes_paises[:])
+
+#pular elemento
+print(nomes_paises[::2])
+
+#ir do fim pro inicio
+print(nomes_paises[::-1])
+
+#saber se tem um iten na lista 
+print("Brasil" in nomes_paises)
+print("Brasil"  not in nomes_paises)
+
+#adicionar iten 
+nomes_paises.append('Italia')
+print(nomes_paises)'''
+
+
+#lista vazia 
+
+'''lista_capitais = []
+print(lista_capitais)
+
+#adicionar iten 
+lista_capitais.append ('BH')
+lista_capitais.append ('SP')
+lista_capitais.append ('CURITIBA')
+
+print(lista_capitais)
+
+#adicionar em lugar específico
+lista_capitais.insert(1, 'Paris')
+print(lista_capitais)
+
+#REMOVER
+lista_capitais.remove('Paris')
+print(lista_capitais)
+
+ #lista elemento removido
+removido =  lista_capitais.pop(1)
+print(lista_capitais, removido)'''
+
+#TUPLA/ pode ser sem parentesses
+nomes_paises = ('Brasil',' Argentina','China','Canada','japão')
+print(nomes_paises)
+
+#renomear sem alterar
+a,s,d,f,g = nomes_paises
+print(s,g)
+ 
+print(*nomes_paises)
+print(nomes_paises)
